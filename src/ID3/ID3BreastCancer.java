@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package id3breastcancer;
+package ID3;
 
 /**
  *
@@ -18,7 +18,7 @@ public class ID3BreastCancer {
         
         Data dataset = new Data();
         dataset.reader();
-        dataset.printer();
+        System.out.println(dataset.debugEn());
     }
     
 }
