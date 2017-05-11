@@ -6,7 +6,7 @@ package id3breastcancer;
  */
 public class Node {
     
-    private final int BIRADS;
+    private final int birats;
     private final int age;
     private final int shape;
     private final int margin;
@@ -17,7 +17,7 @@ public class Node {
     * Gets the arguments from the entries in the data set
     */
     public Node(int BIRADS, int age, int shape, int margin, int density, int severity) {
-        this.BIRADS = BIRADS;
+        this.birats = BIRADS;
         this.age = age;
         this.shape = shape;
         this.margin = margin;
@@ -26,7 +26,7 @@ public class Node {
     }
 
     public int getBIRADS() {
-        return BIRADS;
+        return birats;
     }
 
     public int getAge() {
@@ -51,7 +51,7 @@ public class Node {
 
     @Override
     public String toString() {
-        return "Node{" + "BIRADS=" + BIRADS + ", age=" + age + ", shape=" + shape + ", margin=" + margin + ", density=" + density + ", severity=" + severity + '}';
+        return "Node:" + "BIRADS=" + birats + "\tage=" + age + "\tshape=" + shape + "\tmargin=" + margin + "\tdensity=" + density + "\tseverity=" + severity;
     }
     
     
